@@ -1,0 +1,34 @@
+Decaying Free Software Communities vs. Emerging Hackerspaces
+
+Abstract
+
+In late 2002 a group of macedonian hackers in their early 20s had nothing
+smarter to do and decided to start a NGO called Free Software Macedonia.
+
+The rest is history.
+
+This would have been a really short presenatation, thats why we want to share
+our experience, our adventures and tell our story.
+
+We decided that free software is an important matter, we debated the GNU GPL
+v2 vs. BSD license, we lamented over freedom.
+
+We decided to focus on an important subject of our digital lives and promote
+it, we felt that a developing country like Macedonia can benefit from Free
+Software, and what more can we offer to our fellow citizens then to use
+software in their own language. Microsoft did not offer their proprietary 
+software in Macedonian. So we started with l10n.
+
+Linux on the desktop was about to exploed, OpenOffice.org, Mozilla Firefox,
+GNOME, KDE, those were the Linux on the desktop rising starts. And we
+localized them all. We offered the people of Macedonia, software in their own
+language, we gave them a chance to skip the "digital divide".
+
+We were a small but diverse community, that attracted a fair amount of people.
+
+After localization, came promotion of free software, then came the fight with
+the governement before signing of the agreement with Microsoft, then came
+cooperation with UNDP on OLPC, and UNDP Albania, etc.
+
+But somehow free software was a limited subset, our community was shrinking,
+enthusiasm was dropping, we 

@@ -1,0 +1,167 @@
+This presentation is in draft form, I expect it to be finished by Tuesday
+April 24th 2012 as it will be presented at the share 2 conference in Belgrade
+on Thursday April 26th 2012 at 13:00 h at dom omladine beograd.
+
+I Past
+
+0.Young rebels with a noble cause
+	* We were a group of hackers in our late teens and early twenties, decided to defent a righteous
+	cause in Macedonia. 
+	* To promote free software, an unknown public good, in the region were piracy reigned and Microsoft, Adobe, Corel, 
+	  were reguriting people by the dosens. 
+	* People were starting companies based on "free" pirated Microsoft software. 
+	* A new economy was being born in republics of the former yugoslavia. 
+	* We felt that it was a tricky proposal, and we wanted our voice to be heard.
+	
+1.Promoting free software, free culture and open standards
+	* We gathered together, and founded a grass roots organisation to
+	* promote and explore the technical and technological as well as
+	* social and economical effects of free software on our society.
+	* Actually we later learned that, we had the same "hacker ethics" of
+	  the hackers of MIT of the late 70s of the 20th century
+		*  Sharing
+		*  Openness
+		*  Decentralization
+		*  Free access to computers
+		* -World- (Let's be modest) Community Improvement :)
+		* Community and colaboration
+	* We had a website, we had mailing list(s), an rss agregator, we setup the infrastructure both technical, organisational and legal.
+	* A community was being born, from people who shared the idea that free software was "The right thing to do."
+	* Shared a set of common values, about sharing, helping, about openness.
+
+2. Couple of hacks & failures
+	* We actually did a couple of hacks our selves
+	* We organized several localization marathons, we localized the
+	* complete desktop stack in Macedonian, OpenOffice, Mozilla, KDE,
+	* GNOME, etc.
+	* We organized the "Free software flood", on the Microsoft Vizija
+	* conference in Skopje, were we handout GNU/Linux CDs to participants
+	* in front of the conference venue.
+	* We hacked OLPC computers to help the UNDP pilot in 
+	  Macedonia suceed.
+	* We gave lectures to university students, we attended debates and we
+	* cooprated with domestic and foreign organisations
+3.Community is shrinking
+	* People got employed, graduated from univeristy, were at their
+	* turning point in their lives and career.
+	* Some of the move out of the country, the community was shrinking
+	* The organisation could no longer promote free software activelly,
+	* We could not get projects were, we have to commit 5-6 people for
+	* couple of months to work, hence we could not get steady and stable
+	* inflow of finances.
+	* At the same time we visited a couple of regional gatherings, NSND,
+	* Yaxwe, we went to attend CCC in Berlin, we networked with the
+	* croatian, serbian and bosnian community.
+4.Reboot
+	* Somthing had to be done, or we would have lost our community
+	* We saw that physical spaces started to pop up, Monteparadiso Hacklab
+	* in Pula, Metalab in Vienna, MaMa in Zagreb.
+	* We needed this physical presence to ensure continuity and to
+	* reachout to people out side of our shrinking free software
+	* community. 
+	* We took the risk and in 2009, in early september, I made a call for
+	* participation and people pledged money for rent we were going to
+	* fund a hacklab. Finally.
+	
+
+II Present
+
+5.Hacker culture and free software
+
+* Actually we later learned that, we shared the same "hacker ethics"
+		* Sharing
+		* Openness
+		* Decentralization
+		* Free access to computers
+		* -World- (Let's be modest) Community Improvement :)
+		* Community and colaboration
+It seems that these are the actual values that we from the free software
+community shared, so all of a sudden we felt like we knew what we were doing.
+We were there once before, in the past, when we build our free software
+community. Now we had to be a little bit broader, to attract people intrested in
+technology and to promote the hacker etics.
+
+7.Community run space Narodna Tehnika
+* In an half empty, half ruined, building from 1949 in the former
+	* premises of the geological institute we found refuge
+	* Together with a group of artist we shared rent, it was like Berlin
+	* in the 1990s, a semi like squat, a fully run community space.
+	
+	* We actually rebuild the computer section of the popular Narodna Tehnika in
+	former yugoslavia. Right at the moment when the actual Nardona Tehnika
+	building, and infrastructure got sold and a university for toursim and
+	business evicted the previous space.
+8. Couple of hacks & failures
+   * Hacker spaces Buld 
+	* KIKA 1.0 finished, deprecateded
+	* Of course we failed, the artists made a electric bill of about 1000
+	* eur, and the building was about to be condemned, so we had to stop
+	* our activities.
+	
+	* But we also succedded, we saw that it could be done, that people
+	* came, and found value in the hacker community, that they participaed
+	* in the weekly events and activities.
+	* That people would contribute a part of their monthly income, to
+	* support our hackerspace and the activities that were happening
+	* there.
+	* We had our free software community as the core, and we manage to
+	* expand it with other people that loved and shared our ideas about
+		* Sharing
+		* Openness
+		* Decentralization
+		* Free access to computers
+		* -World- (Let's be modest) Community Improvement :)
+		* Community and colaboration
+
+	
+8. Activites
+	* Gnu/Linux/Android first aid
+	* Programmming languages
+	* Knowledge sharing
+	* GSOC (Google Summer of Code)
+	* GNOME Women Outreach
+	* Hardware hacking
+	* We build the led cube.
+	* Small but manu different infrastructure project for the hacklab
+	* itself
+	* A weekly radio show for digital freedom called "This song dosn't
+	* have an owner" on Kanal 103, a cult radion station born inside the 
+vomb od the public media service Macedonian Radion Television
+
+III Future
+
+9. 
+	*Establish a more direct cooperation outside of NSND events between the
+three hackerspaces in Zagreb, Belgrade and Skopje.
+	* Make them three acess points of a decentralized network for sharing
+	* knwoledge and colaborate during events, make the necessary
+	* infrastruture for that.
+	* Continue and improve the runnuing of KIKA
+ 	* Expect new events and new activities from the the next generation
+	* We have yet to prove our reputation and be the change that we want
+	* to see in society
+	* We have to escape the trap that KIKA is only a place where trolls
+	* hang out, drink beer and nag.
+	* We have to attain continuity and build upon previous efforts, reuse,
+	* remix and recycle.
+	* So far we have financial stability, we have to make sure this stays
+	* like that
+	
+Conclusions
+
+# A small group of people, made a change when they started Free Software
+# Macedonia 10 years ago
+# A community was created to help that small group of people so we can grow
+# and expand, but still share our ideas and values
+# That community decayed over time, but with the help of a small group of
+# people that shared the original ideas and hacker ethichs managed to emerge 
+as the founding force behind the KIKA hacklab in Skopje
+# Now a new community is being born on top of the core of our previous
+# community, they don't share our exact ideas, as we have not shared the exact ideas of
+# our predesessors,they live and communicate, not via email nor IM, but using twitter DM and
+# facebook statuses, but that not good nor bad. It just is, how it is.
+# But lets see what the future holds for everyone.
+# There are many ideas and visions of what KIKA should be, and how it should
+# look like but let's leave that for the future. 
+
+
