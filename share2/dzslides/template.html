@@ -803,17 +803,28 @@ figcaption-bottom {
       this.goFullscreen();
     }
   }
+  Dz.onmousedown = function(e) {
+  	this.back();
+  }
+  Dz.oncontextmenu = function(e) {
+  	this.forward();
+  }
+
 
   /* Touch Events */
 
   Dz.setupTouchEvents = function() {
+
     var orgX, newX;
     var tracking = false;
 
     var db = document.body;
+    var self = this;
     db.addEventListener("touchstart", start.bind(this), false);
     db.addEventListener("touchmove", move.bind(this), false);
-
+    db.addEventListener("click", function() { self.forward(); return false; });
+    db.addEventListener("contextmenu", function() { self.back(); return false; }); 
+    db.addEventListener('DOMMouseScroll', function(ev) { ev.detail > 0? self.back(): self.forward(); });
     function start(aEvent) {
       aEvent.preventDefault();
       tracking = true;
