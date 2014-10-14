@@ -1,12 +1,16 @@
-We have our senses and the cultural institutions have their contents. 
+Hi, I'm Mihail, and I come from iborn, a software company. 
+We build software because we have many ideas, we know how to do it, and we beleive in it.
+So today I'd like to share one of our ideas that we hope will improve cultural life.
+
+Our first thought about culture was: how do people experience it?
+Well, we have our senses and the cultural institutions have their contents. 
 We have our eyes, and they have exponats, pictures, exhibits, artefacts. 
 We have our ears, and they have music, concerts, ballet...
 Our goal is to put the mobile technology in between in order to activate all senses and create a new unique experience. 
-Hidden worlds will be uncovered and the visitors will be immersed in multimedia rich content.
 
 How can this be be accomplished? 
 We can add digital content to each physical location, what we call Point of Experience.
-The institutions and the public will create the content together. 
+The institutions and the public will create and use the content together. 
 With each Point of Experience we can associate pictures, audio guides, video recordings, 3d models, text, comics... 
 The point and the content together are what we call Experience Capsule and it can be found in many forms. 
 It can be a hidden treasure or one visible to everyone, it can be a picture, a building, a monument, or any other object... 
@@ -16,10 +20,10 @@ Once that the user is close enough he can open the capsule and engage with the e
 This way everyone can share his experience for the point or create a new one.
 
 So who can use the application? 
-By using modern technology we can bring the experience closer to everyone that uses a smart mobile device, which is around 2 billion people. 
+Everyone that uses a smart mobile device, which is more than 50% of the population. 
 As we can see from the sales statistics, this is an ever increasing number, thus justifying our approach.
 But what if someone can not sense something? 
-We can use the mobile device to present the content to disabled and impared in an apropriate way, so they can experience and share their experience with the others.
+We can use the mobile device to present the content to the disabled and impared in an apropriate way, so they can experience and share their experience with the others.
 The visualy impaired can use the audio guides, the hearingly impaired can read the written content and 
 the physicaly impaired can apply for a version that will enable them remote access to the content and they can use the augmented reality feature to explore.
 
@@ -28,7 +32,7 @@ This is not a short term solution, it is a win win on the long run.
 The winners are the users, the institutions and the brand.
 The users get interactive content, competitions, discounts, new experience; 
 The institutions get digitalized data, interactive guides, more visitors, information for their visitors, a new marketing medium and oportunities. 
-We get to create a brand that will generate revenue and will be self sustainable.
+We get to create a brand that will generate revenue and will be self sustainable and grow.
 
 The revenue will come from adds, premium version and selling merchangize.
 What is also great is that the application will be promoted by the content. 
