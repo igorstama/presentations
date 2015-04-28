@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Стаматовски, Игор - Скалаилност на системи за отворен пристап до јавни податоци</title>
+
+		<meta name="description" content="Скалаилност на системи за отворен пристап до јавни податоци">
+		<meta name="author" content="Стаматовски Игор / Stamatovski Igor">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    
+    
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style type="text/css">
+        .reveal h1,
+        .reveal h2,
+        .reveal h3,
+        .reveal h4,
+        .reveal h5,
+        .reveal h6 {
+            word-wrap: normal;
+            -webkit-hyphens: manual;
+            -moz-hyphens: manual;
+            hyphens: manual;
+        }
+    </style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="#ccccc">
+					<img src="lib/images/Logo_FINKI_UKIM_MK.jpg"/>
+					<p>Скалабилност на системи за отворен пристап до јавни податоци</p>
+					<p>
+						<small>Кандидат: <a href="http://iborn.net/igor">Игор Стаматовски</a> / <a href="http://twitter.com/igor_stama">@igor_stama</a></small>
+					</p>
+					<p>
+						<small>Ментор: проф. д-р Владимир Трајковиќ</small>
+					</p>
+				</section>
+				
+				
+				<section data-background="#000000" data-background-transition="slide">
+					<h2>Мотив за изработка</h2>
+					<aside class="notes">
+					Мотив за пишување на оваа теза е согледување на предизвиците за обезбедување на скалабилен дистрибуиран систем базиран на бази на податоци со документи, кој ќе служи за публикување на отворени податоци за метеоролошката состојба и амбиенталните карактеристики на квалитетот на воздухот.
+					Иницијативата на Слободен софтвер Македонија за изработка на мето сензор кутии по принципот направи сам
+					</aside>
+				</section>
+				
+				<section data-background="lib/images/air-quality.png" data-background-transition="slide">
+					<aside class="notes">
+					Исклучени мерни места за кои нема податоци
+					Медиумите во паника
+					</aside>
+				</section>
+				
+				<section data-background="lib/images/air-quality-2.png" data-background-transition="slide">
+					<aside class="notes">
+					Исклучени мерни места за кои нема податоци
+					</aside>
+				</section>
+				
+				<section data-background="#000000" data-background-transition="slide">
+					
+					<p class="fragment highlight-red">Мерење на квалитетот на амбиенталниот воздух</p>
+					<p class="fragment highlight-red">
+						Портали за индекс за квалитет на воздухот  
+					</p>
+					<ul>
+					<li>ФИНКИ - http://skopjefinki.ekoinformatika.mk/</li>
+					<li>МОЕПП - http://airquality.moepp.gov.mk/?page_id=175</li>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section data-background="lib/images/meteo-kutija.jpg">
+						<h2>Метео Кутија</h2>
+						<ul>
+						<li>Хардвер</li>
+						<li>Софтвер</li>
+						</ul>
+					  <aside class="notes">
+						  Белешки за овој слајд:
+					  </aside>
+					</section>
+					<section>
+						<h2>Стандардни сензори во метео кутијата</h2>
+						<ul>
+						  <li>NО2 - Азот двооксид </li>
+						  <li>CO - Јаглерод моноксид</li>
+						  <li>TEMP - Температура</li>
+						  <li>HUM - Влажност на воздухот</li>
+						</ul>
+						
+						<aside class="notes">
+						  Дополнителните сензори за суспендирани честички (PM10 и PM25) лесно можат да се надоградат на кутијата, најефтините чинат од 15 до 20 долари, но оние поскапите би можеле да ја покачата цената и на отприлика 500 долари.
+						</aside>
+					</section>
+					
+				</section>				
+				<section data-background="#ccccc" data-background-transition="slide">
+					<h2>Постоечкото софтверски решение</h2>
+					<h3>Централизиран сервис во облакот понуден од трета страна</h3>
+					<aside class="notes">
+						 pashube, cosm, xively
+					</aside>
+				</section>
+				<section data-background="lib/images/postoechko-reshenie.png">
+					<aside class="notes">
+						  Белешки за овој слајд:
+					</aside>
+				</section>
+				<section data-background="#000000">
+				<h3>Дистрибуирано решение базирано на отворени податоци </h3>
+						      <ul>
+						      <li>Ниска цена на одржување</li>
+						      <li>Опслужување на голем број на точки</li>
+						      <li>Располагање со целото податочно множество кое е публикувано</li>						      
+					<aside class="notes">
+						  
+					</aside>
+				</section>
+				<section data-background="#000000">
+				<h2>Што се отворени податоци (open data) </h2>
+						      <ul>
+						      <li>Целосни</li>
+						      <li>Првични</li>
+						      <li>Навремени</li>
+						      <li>Достапни</li>
+						      					      
+						      </ul>
+					<aside class="notes">
+						  Целосни: Сите јавни податоци треба да бидат објавени. Јавни податоци се оние податоци кои не се недостапни поради безбедносни, лични или прашање на привилегија на пристап.<br/>
+						  Првични: Податоците се собираат на изворот, со најголемото можно ниво на грануларност, но никогаш во агрегирана или модифицирана форма.<br/>
+						  Навремени: Податоците треба да се расположливи онолку бргу, колку што е потребно да се зачува нивната вредност.<br/>
+						  Достапни: Податоците се достапни на најшироко можниот опсег на корисници, за најширокиот можен опсег на употреба.						  <br/>
+					</aside>
+				</section>				    
+				<section data-background="#000000">
+				<h2>Што се отворени податоци (open data) </h2>
+						      <ul>
+						      <li>Машински обработливи</li>
+						      <li>Не-дискриминаторни</li>
+						      <li>Слободни</li>
+						      <li>Без лиценца</li>						      
+						      </ul>
+					<aside class="notes">						  
+						  Машински обработливи: Податоците треба да бидат разумно структурирани, за да можат машински да бидат обработени.<br/>
+						  Не-дискриминаторни: Податоците се расположливи секому, без услов за регистрација при пристап<br/>
+						  Слободни: Податоците се расположливи во податочен формат, над кој ниеден ентитет нема екслузивна контрола.<br/>
+						  Без лиценца: Податоците не се предмет на авторско право, патент, заштитетна марка или трговска тајна. Разумни рестрикции се дозволени во случај на лични податоци, безбедност и привлегиран пристап.<br/>
+					</aside>
+				</section>				    
+				<section data-background="lib/images/slika-crtana-out.jpg">
+					<h2>Предлог решение</h2>
+					<aside class="notes">
+						<li>Апликација за активирање на метео кутија - за додавање и автентицирање на секоја метео кутија, како уникатен јазол кој ќе генерира податоци во системот,</li>
+						<li>Апликација за публикување на податоците - другата ќе биде каталог на сите метео-кутии, пристап до необработените податоци од секоја кутија поединечно, преглед на достапните сензори, потоа агрегирани податоци според време, сензор, локација на секоја кутија и сл.</li>
+						<li>REST сервис</li>
+						<li>Мобилни клиенти</li>
+					</aside>
+				</section>
+
+				<section>
+					<h3>Стратегии за сакалабилност на дистрибуирани апликации</h3>
+					<ul>
+						<li>Вертикално</li>
+						<li>Хоризонтално</li>
+					</ul>
+					<aside class="notes">
+						  додавање на дополнителни ресурси на тековниот сервер за да му ги зголемиме перформансите и капацитетот, (вертикално скалирање)
+						  користење на поголем број на ефтини сервери, за да ги постигнеме саканите перформанси и капацитет на процесирање (хоризонтално скалирање).
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Карактеристики на дистрибуирани апликации</h2>
+					<ul>
+						<li>Конзистентност</li>
+						<li>Расположливост</li>
+						<li>Толеранција при делење</li>
+					</ul>
+					<aside class="notes">
+						  Белешки за овој слајд:
+					</aside>
+				</section>
+				
+				<section>
+					<section>
+					      <h2>Карактеристики на дистрибуирани апликации</h2>
+					      <ul>
+						      <li>N - вкупен број на јазли</li>
+						      <li>R - број на јазли од кои читаме</li>
+						      <li>W - број на јази во кои запишуваме</li>
+					      </ul>
+					      
+					      <p> Ако имаме N=3, R=2, W=2</p>
+					      <aside class="notes">
+							Белешки за овој слајд:
+					      </aside>
+					</section>
+					<section>
+						<h2>Типпови на конзистентност</h2>
+						<ul>
+						 <li>R+W>N - силна конзистентност</li>
+						 <li>R+W<=N - евентуална конзистентност</li>
+						 <li>MVCC - Повеќе верзионирана контрола на конкурентност</li>
+						</ul>
+						
+						<aside class="notes">
+						  1. Апликации прилагодени кон операции за читање
+						    Мало R, големо W
+						    
+						  2. Апликации прилагодени кон операции на запишување
+						    Малo W, големо R
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Мапирај и намали</h2>
+						<pre>
+						map(key,value) -> list (key,value)
+						reduce(ikey,list(ivalue))) -> list(fvalue)
+						</pre>
+						<aside class="notes">
+						
+						</aside>
+					</section>
+				</section>
+				<section>
+					<h2>Скалабилност</h2>
+					<h4>на различни системи базирани на документи</h4>
+					<ul>
+					    <li>Redis</li>
+					    <li>Riak</li>
+					    <li>MongoDB</li>
+					    <li>CouchDB</li>
+					    <li>CouchBase</li>
+					    <li>Cassandra</li>
+					    <li>Amazon Dynamo</li>
+					    <li>Google BigTable</li>
+					</ul>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+				<section>
+					<section>
+					<h2>Технологии</h2>
+					<h3>CouchDB</h3>
+					<h4>Карактеристики</h4>
+					<ul>
+					  <li>Нема шема, работи само со документи</li>
+					  <li>Оптимистички тип на репликација</li>
+					  <li>Вграден HTTP Server</li>
+					  <li>Поддржуваа JavaScript апликации</li>
+					</ul>
+					<aside class="notes">
+						
+					</aside>
+					</section>
+					<section>
+					  <h3>Податочен модел<h3>
+					   <h4>JSON</h4>
+					  <ul>					   
+					    <li>Контрола на конкурентност</li>
+					    <li>Валидациски функции во JavaScript</li>
+					  </ul>
+					  <aside class="notes">
+						
+					</aside>
+					</section>
+					<section>
+					  <h3>Модел за поставување прашања</h3>
+					   
+					  <ul>					   
+					    <li>Прегледи - views </li>
+					    <li>Вграден REST-интерфејс</li>
+					    <li>Мапирај и намали</li>
+					  </ul>
+					  <aside class="notes">
+						
+					</aside>
+					</section>
+					
+					<section>
+					  <h3>Репликација</h3>
+					  <p>Оптимистичка репликација</p>
+					  <p>MVCC со употреба на хеш истории</p>
+					  <aside class="notes">
+					Механизмот за репликација во CouchDB е имплементиран преку користење на изворот на промени, што може да се пристапи преку REST API-то. Изворот содржи листа на идентификторите на документите кои биле последно променети. Ако една CouchDB инстанца е реплицирана во некоја друга инстанца, тогаш овој извор ни служи како евиденција кои документи биле ажурирани од последната репликација. Оваа листа на промени може да се користи од страна на клиентската апликација, што му дава шанса на клиентот да активира настани за ажурирања на документите или да ги отстрани оние кои се застарени од сопствениот кеш.	
+					Негативна особина на оптимистичкиот тип на репликација е дека системот што ја применува мора да виде способен да се справи со конфликтите што ќе се појават помеѓу различните ревизии на истиот објект.
+					CouchDB поддржува повеќе верзионирана контрола на конкурентност (ПВКК), тоа е овозможено со помош на користење на хеш истории.
+					</aside>
+					</section>
+					<section>
+					  <h3>Хоризонтална фрагментација</h3>
+					   
+					    <ul>					   
+					    <li>Со помош на екстензии:</li>
+					    <li>The Lounge - Simple and Advanced Proxy</li>
+					    <li>Cloudant - Big Couch - R=1, W=3,N=3</li>
+					  </ul>
+					  <aside class="notes">
+						
+					</aside>
+					</section>
+					<section>
+					  <h3>Архитектура</h3>
+					  
+					  <h4>Конзистентност</h4>
+					  <ul> 
+					    <li> Master - Master -> евентуална конзистентност</li>
+					    <li> Master - Slave -> силна конзистентност</li>
+					  </ul>
+					  
+					  
+					  <aside class="notes">
+						
+					</aside>
+					</section>
+					<section>
+					  <h3>Архитектура<h3>
+					  
+					  <h4>Справување со неуспеси</h4>
+					  <ul> 
+					    <li>B+ дрво</li>
+					    <li>отпорно кон проблеми кога ќе се случи пад на напојувањето</li>
+					    
+					  </ul>
+					  
+					  
+					  <aside class="notes">
+						Прилагодено за ефикасно пристапување до складираните податоци и нивно читање
+						При копирање на еден документ, се копира и целата патека од дрвото до самиот докумнет
+						практично е невозможно да се случи губење на податоци
+					</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+					    <h2>Евалуација</h2>
+					    <h3>Тест конфигурации</h3>
+					    <h3>Хардвер</h3>
+					    <ul>
+					      <li>Lenovo X1 Carbon лаптоп, со Intel(R) Core(TM) i7-3667U CPU @ 2.00GHz, 8GB RAM</li>
+					      <li>Desktop PC со Intel(R) Pentium(R) CPU G620 @ 2.60GHz, 8GB RAM</li>
+					    </ul>
+					    <h3>Софтвер</h3>
+					    <ul>
+					    <li>HAProxy балансиранње на оптоварувањето</li>
+					    <li>TSUNG вклучува симулации на корисници и оптоварување</li>
+					    </ul>				
+					    <aside class="notes">
+						    
+					    </aside>
+					</section>
+					<section>
+					    <h2>Прелиминарни резултати 1 </h2>					    
+					    <ul>
+					    <li>1 couchDB инстанца, 100 корисници во секунда, во времетраење од 5 минути</li>
+					    <li>Опслужени 600 корисници, од вкупно 1500.</li>
+					    </ul>
+					    </br>
+					    <ul>
+					    <li>1 couchDB инстанца, рата на трансакции во времетраење од 5 минути</li>
+					    <li>Околу 130 трансакции во секунда.</li>
+					    </ul>
+					    <aside class="notes">
+						    
+					    </aside>
+					</section>
+					<section>
+					    <h2>Прелиминарни резултати 2</h2>
+					    <h3> N=2, R=2, W=2</h3>
+					    <ul>
+					    <li>1 couchDB локален кластер, 800 корисници во секунда, во времетраење од 5 минути</li>
+					    <li>Опслужени 5000 корисници, од вкупно 8000.</li>
+					    </ul>
+					    </br>
+					    <ul>
+					    <li>1 couchDB локален кластер, рата на трансакции во времетраење од 5 минути</li>
+					    <li>Околу 90 трансакции во секунда.</li>
+					    </ul>
+					    <aside class="notes">
+						    Поради фактот што сите јазли се на истата машина и не се географски дистрибуирани
+						    сега ратата на трансакции, падна на околу 90 трансакции во секунда, 
+						    во споредба со претходните 130.
+						    
+						    Дополнително тесно грло овде се покажа балансерот на оптоварување, поради привременото заситување со бројот на опслужени истовремени корисници и намалување на бројот на трансакции во секунда.
+					    </aside>
+					</section>
+					<section>
+					  <h2>Тесни грла</h2>
+					  <ul>
+					  <li>Стандардни поставки во Erlang: max_connections или ERL_MAX_PORTS</li>
+					  <li>Балансерот на оптоварување (HAProxy) - почна да ги става барањата во редица</li>
+					  </ul>
+					</section>
+					 <aside class="notes">
+					  претставуваат ограничување за отворање голем број на датотеки
+					  макисмум отворени порти на 1024 пто го ограничува бројот на истоврмени конкурентни корисници на CouchDB на нешто под 1024. Овие
+					  Со зголемување на бројот на барања од клиентот, прокси серверот почна да ги става во ред на чекање некои од барањата кои што не можеше да ги опслужи на време и со тоа го зголеми оптоварувањето на прокси серверот, а со тоа ја намали ратата на трансакции во секунда.
+					 </aside>
+				</section>
+				<section>
+					<h2>Заклучок</h2>
+					<ul>
+					<li>Скалабилноста на системите за пристап до отворени податоци е битен елемент при нивниот дизајн,</li>
+					<li>Скалабилноста ја зголемува комплексноста на системот и воведува дополнителен товар при нивното оддржување</li>
+					</ul>
+					<aside class="notes">
+						Скалабилноста на системите за пристап до отворени податоци е битен елемент при нивниот дизајн, поради тоа што практично претставуваат јавна инфраструктура како електро-енергетската мрежа, улиците и патиштата.
+						Дизајнирањето на скалабилноста ја зголемува комплексноста на системот и воведува дополнителен товар при нивнотот одржување, проширување и додавање на нови функционалности.
+					</aside>
+				</section>
+				<section>
+					<h2>Ви благодарам на вниманието</h2>					
+					<aside class="notes">
+						Крај
+					</aside>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
