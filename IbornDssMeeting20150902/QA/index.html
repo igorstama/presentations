@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>iborn.net</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="iborn.net">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" type="image/x-icon" href="images/LogoTransparent.jpg">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/ibornTheme.css" id="theme">
+    <!--<link rel="stylesheet" href="css/theme/demo.css" id="theme">-->
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+	</script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div class="reveal">
+        <a href="index.html?#/titleSection" class="contentLink" style="font-size: 12px; color: #8d8d8d; padding: 3px;"><img src="images/LogoTransparent.jpg" style="margin-top:20px; margin-left:20px; width: 50px; height: 50px;" /></a>
+        <div id="slideNumber" class="contentLink" style="float: right; color: #8d8d8d; padding: 3px;"></div>
+        <div class="slides">
+            <!--<section id="titleSection" data-background="images/background.jpg" data-background-repeat="repeat" data-background-size="100px">-->
+            <section id="titleSection">
+				<hr />
+				<h3>Quality Assurance</h3>
+				<h4>Project management (middle management)</h4>
+				<hr />
+				<div>
+					<img src="images/LogoTransparent.jpg" style="margin-top:20px; margin-left:20px; width: 150px; height: 150px; border: none; background: none" />
+				</div>
+                <div>
+                    <div style="text-align: center">
+                        iborn.net
+                    </div>
+                </div>
+
+                <p style="margin-top: 20px; clear: both">
+                    <small>Skopje 2015</small>
+                </p>
+            </section>
+
+            <section id="firstSection">
+                <h3>AGENDA</h3>
+                <ul>
+					<li>Testing & automation</li>
+					<li>Organization</li>
+					<li>Open issues</li>
+                </ul>
+            </section>
+			
+			<section id="secondSection">
+				<section>
+
+					<h3>Testing & automation</h3>
+					<ul>
+				        <li>Quality assurance</li>	
+						<li>Automated testing
+						<ul><li>Tools: Slenium IDE & Selenium WebDriver</ul>
+						<ul><li>Current</li></ul>
+						<div>
+						<img src="images/current.png" /></div>
+						<ul><li>Future</li></ul>
+						<div>
+						<img src="images/Future.png"/></div>
+						<li>Manual testing</li>
+					</ul>
+				</section>
+            </section>
+			
+			<section id="thirdSection">
+				<section>
+					<h3>Organization</h2>
+					<ul>
+						<li>QA team </li>
+						<ul><li>Senior QA & Team lead</li></ul>
+						<ul><li>Junior QA</li></ul>
+						<div><img src="images/CurrentQA.png"/></div>
+						<ul><li>Open positions:</li></ul>
+						<ul><ul><li>Medium QA</li></ul></ul>
+						<ul><ul><li>Intern QA</li></ul></ul>
+						<img src="images/FutureQA.png"/>
+				</section>				
+				<section>
+					<h3>Organization</h2>
+					<ul>
+						<li>Task</li>
+						<ul><li>Testing & testing scenarios</li></ul>
+						<ul><li>Support</li></ul>
+						<ul><li>Automate process</li></ul>
+						<ul><li>Acceptance meetings & acceptance scenarios </li></ul>
+						<div><img src="images/Organization.png" /></div>
+					</ul>
+				</section>
+            </section>
+	<section>
+					<h3>Open issues</h2>
+					<ul>
+						<li>QA deficit</li>
+						<li>Training</li>
+						<li>Unprepared meeting atteners</li>
+						<li>Late acceptance</li>
+						<li>Miscommunication</li>
+						<li>Information deadlock</li>
+						</ul>
+				</section>
+            </section>
+            <section id="closingSection">
+                <h2>THANK YOU!</h2>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                //{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+                // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+            ]
+        });
+
+		</script>
+
+</body>
+</html>
