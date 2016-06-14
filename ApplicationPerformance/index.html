@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>iborn.net</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="iborn.net">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" type="image/x-icon" href="images/0_LogoTransparent.jpg">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/ibornTheme.css" id="theme">
+	<link rel="stylesheet" href="css/zoom.css">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+	</script>
+
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+    <div class="reveal">
+        <a href="index.html?#/titleSection" class="contentLink" style="font-size: 12px; color: #8d8d8d; padding: 3px;"><img src="images/0_LogoTransparent.jpg" style="margin-top:20px; margin-left:20px; width: 50px; height: 50px;" /></a>
+        <div id="slideNumber" class="contentLink" style="float: right; color: #8d8d8d; padding: 3px;"></div>
+        <div class="slides">
+            <section id="titleSection">
+				<hr />
+				<h3>Application Performance</h3>
+				<hr />
+				<div>
+					<img src="images/0_LogoTransparent.jpg" style="margin-top:20px; margin-left:20px; width: 150px; height: 150px; border: none; background: none" />
+				</div>
+                <div>
+                    <div style="text-align: center">
+                        iborn.net
+                    </div>
+                </div>
+                <p style="margin-top: 20px; clear: both">
+                    <small>Skopje 2016</small>
+                </p>
+            </section>
+			
+            <section id="AgendaSection">
+                <h3>AGENDA</h3>
+                <ul>
+					<li><a href="https://www.hibernatingrhinos.com/products/efprof" target="_blank">Entity Framework Profiler</a></li>
+					<li>Data Transfer Object</li>
+					<li>Include statement</li>
+					<li>Indexes</li>
+					<li>Entity Framework Configuration</li>
+					<li>Reduce Database calls</li>
+					<li>Copy-paste a code is bullshit</li>
+					<li><a href="https://efbulkinsert.codeplex.com/" target="_blank">Bulk Insert</a></li>
+                </ul>
+            </section>
+			
+			<section id="EntityFrameworkProfilerSection">
+				<section>
+					<h3>Entity Framework Profiler</h3>
+					<h4><a href="https://www.hibernatingrhinos.com/products/EFProf" target="_blank">Introduction</a></h4>
+					<ul>
+						<li>Cognitive application awareness</li>
+						<li>Visual insight into the interaction between your database and application code</li>
+						<li>Analysis and detection of common pitfalls when using Entity Framework</li>
+						<li>Analysis is delivered via perfectly styled SQL and linkable code execution</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Entity Framework Profiler</h3>
+					<h4><a href="https://www.hibernatingrhinos.com/Products/EFProf/learn/General/GettingStarted" target="_blank">Preparing an application to be profiled</a></h4>
+					<ul>
+						<li>HibernatingRhinos.Profiler.Appender.dll</li>
+						<li>Application_Start in web applications, Program.Main in Windows / console applications, or the App constructor for WPF applications</li>
+					</ul>
+					<pre style="width:100%;"><code>
+protected void Application_Start()
+{
+    HibernatingRhinos.Profiler.Appender.EntityFramework.EntityFrameworkProfiler.Initialize();
+    ...
+}
+					</code></pre>
+				</section>
+				<section>
+					<h3>Basic information<span class="zoom"></span></h3>
+					<div class="zoom">
+						<img src="images/2_DataTransferObject(1).jpg" style="border: none; background: none" />
+					</div>
+				</section>
+				<section>
+					<h3>Some of alerts</h3>
+					<ul>
+						<li><a target="_blank" href="https://www.hibernatingrhinos.com/Products/EFProf/learn/Alert/TooManyJoins">Avoid too many joins</a></li>
+						<li><a target="_blank" href="https://www.hibernatingrhinos.com/Products/EFProf/learn/Alert/ExcessiveNumberOfRows">Excessive Number Of Rows Returned</a></li>
+						<li><a target="_blank" href="https://www.hibernatingrhinos.com/Products/EFProf/learn/Alert/MultipleSessionsInTheSameRequest">More than one session per request</a></li>
+						<li><a target="_blank" href="https://www.hibernatingrhinos.com/Products/EFProf/learn/Alert/QueryOnUnIndexedColumn">Query on un indexed column</a></li>
+						<li><a target="_blank" href="https://www.hibernatingrhinos.com/Products/EFProf/learn/Alert/SelectNPlusOne">Select N+1</a> & <a target="_blank" href="">Select N+1 in the same request</a></li>
+						<li><a target="_blank" href="https://www.hibernatingrhinos.com/Products/EFProf/learn/Alert/TooManyDatabaseCallsInTheSameRequest">Too many database calls in the same request</a></li>
+						<li><a target="_blank" href="https://www.hibernatingrhinos.com/Products/EFProf/learn/Alert/TooManyExpressionsPerWhereClause">Too many expressions per where clause</a></li>
+						<li><a target="_blank" href="https://www.hibernatingrhinos.com/Products/EFProf/learn/Alert/TooManyTables">Too many nesting select statements</a></li>
+						<li><a target="_blank" href="https://www.hibernatingrhinos.com/Products/EFProf/learn/Alert/UnboundedResultSet">Unbounded result set</a></li>
+					</ul>
+				</section>
+            </section>
+			
+			<section id="DataTransferObjectSection">
+				<section>
+					<h3>Data Transfer Object</h3>
+					<ul>
+						<li>A Data Transfer Object is an object that is used to encapsulate data, and send it from one subsystem of an application to another.</li>
+						<li>Consequences & Implications</li>
+						<ul>
+							<li><span class="smalltext">DTO design patterns reduces network traffic between client & server</span></li>
+							<li><span class="smalltext">It minimizes coupling (dependencies)</span></li>
+							<li><span class="smalltext">The main advantage of design pattern is we can prevent network overhead problems and we can improve performance of the system</span></li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h3>Data Transfer Object</h3>
+					<h4>First Example</h4>
+					<div class="zoom">
+						<img src="images/2_DataTransferObject(1).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Data Transfer Object</h3>
+					<div>
+						<img src="images/3_DataTransferObject(2).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Data Transfer Object</h3>
+					<div class="zoom">
+						<img src="images/4_DataTransferObject(3).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Data Transfer Object</h3>
+					<div>
+						<img src="images/5_DataTransferObject(4).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Data Transfer Object</h3>
+					<div>
+						<img src="images/6_DataTransferObject(5).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Data Transfer Object</h3>
+					<div>
+						<img src="images/7_DataTransferObject(6).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Data Transfer Object</h3>
+					<div class="zoom">
+						<img src="images/8_DataTransferObject(7).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Data Transfer Object</h3>
+					<h4>Second Example</h4>
+					<div class="zoom">
+						<img src="images/9_DataTransferObject(8).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Data Transfer Object</h3>
+					<div class="zoom">
+						<img src="images/10_DataTransferObject(9).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Data Transfer Object</h3>
+					<div>
+						<img src="images/11_DataTransferObject(10).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Data Transfer Object</h3>
+					<div class="zoom">
+						<img src="images/12_DataTransferObject(11).jpg" />
+					</div>
+				</section>
+            </section>
+			
+			<section id="IncludeStatementSection">
+				<section>
+					<h3>Include statement</h3>
+					<ul>
+						<li>Eager loading is the process whereby a query for one type of entity also loads related entities as part of the query. Eager loading is achieved by use of the Include method. It is also possible to eagerly load multiple levels of related entities.</li>
+					</ul>
+					<pre style="width:100%;"><code>
+	// Load one claim and its related payment guarantees
+	Claim claim = db.Claims
+		.Where(x => x.Id == Id)
+		.Include(x => x.PaymentGuarantees)
+		.SingleOrDefault();
+					</code></pre>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<h4>First Example</h4>
+					<div class="zoom">
+						<img src="images/13_IncludeStatement(1).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<div>
+						<img src="images/14_IncludeStatement(2).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<div>
+						<img src="images/15_IncludeStatement(3).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<div>
+						<img src="images/16_IncludeStatement(4).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<div class="zoom">
+						<img src="images/17_IncludeStatement(5).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<div>
+						<img src="images/18_IncludeStatement(6).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<div>
+						<img src="images/19_IncludeStatement(7).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<div class="zoom">
+						<img src="images/20_IncludeStatement(8).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<h4>Second Example</h4>
+					<div class="zoom">
+						<img src="images/21_IncludeStatement(9).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<div>
+						<img src="images/22_IncludeStatement(10).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<div>
+						<img src="images/23_IncludeStatement(11).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<div class="zoom">
+						<img src="images/24_IncludeStatement(12).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Include statement</h3>
+					<div class="zoom">
+						<img src="images/25_IncludeStatement(13).jpg" />
+					</div>
+				</section>
+            </section>
+			
+			<section id="IndexesSection">
+				<section>
+					<h3>Indexes</h3>
+					<ul>
+						<li>An index is used to speed up the performance of queries. It does this by reducing the number of database data pages that have to be visited/scanned.</li>
+						<ul>
+							<li>Clustered Indexes</li>
+							<li>Non-clustered Indexes</li>
+						</ul>
+					</ul>
+					<div>
+						<img src="images/26_Indexes(1).jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Indexes</h3>
+					<div class="zoom">
+						<img src="images/27_Indexes(2).jpg" />
+					</div>
+				</section>
+            </section>
+			
+			<section id="EntityFrameworkConfigurationSection">
+				<section>
+					<h3>Entity Framework Configuration</h3>
+					<ul>
+						<li>AutoDetectChangesEnabled</li>
+						<li>ValidateOnSaveEnabled</li>
+					</ul>
+					<pre style="width:100%;height:100%;"><code>
+	db.Configuration.ValidateOnSaveEnabled = false;
+	db.Configuration.AutoDetectChangesEnabled = false;
+	...
+	foreach (Permission permission in Permissions)
+	{
+		RolePermission RolePermission = new RolePermission
+		{
+			Permission = permission, PermissionId = permission.Id, Role = adminRole, RoleId = adminRole.Id, Create = true, Read = true, Update = true, Delete = true
+		};
+		db.RolePermissions.AddOrUpdate(x => new { x.PermissionId, x.RoleId }, RolePermission);
+	}
+	db.Configuration.ValidateOnSaveEnabled = true;
+	db.Configuration.AutoDetectChangesEnabled = true;
+	db.SaveChanges();
+					</code></pre>
+				</section>
+			</section>
+			
+			<section id="ReduceDatabaseCallsSection">
+				<section>
+					<h3>Reduce Database calls</h3>
+					<div>
+						<img src="images/28_ReduceDatabaseCalls.jpg" />
+					</div>
+				</section>
+				<section>
+					<h3>Reduce Database calls</h3>
+					<div class="zoom">
+						<img src="images/29_Permissions.jpg" />
+					</div>
+				</section>
+			</section>
+			
+			<section id="CopyPasteAcodeIsBullshitSection">
+				<section>
+					<h3>Copy-paste a code is bullshit</h3>
+					<div class="zoom">
+						<img src="images/30_TreatmentSpecialties.jpg" /> 
+					</div>
+				</section>
+				<section>
+					<div class="zoom">
+						<img src="images/31_Copy-paste(1).jpg" /> 
+					</div>
+					<div class="zoom">
+						<img src="images/32_Copy-paste(2).jpg" /> 
+					</div>
+				</section>
+			</section>
+			
+			<section id="BulkInsertSection">
+				<section>
+					<h3>Bulk Insert</h3>
+					<ul>
+						<li><a target="_blank" href="https://www.nuget.org/packages/EntityFramework.BulkInsert-ef6/">Nuget</a></li>
+						<ul>
+							<li><span class="smalltext">PM> Install-Package EntityFramework.BulkInsert-ef6</span></li>
+							<li><span class="smalltext">https://www.nuget.org/packages/EntityFramework.BulkInsert-ef6</span></li>
+						</ul>
+						<li>Usage</li>
+						<ul>
+							<li>using EntityFramework.BulkInsert.Extensions;</li>
+							<li>using System.Transactions;</li>
+						</ul>
+					</ul>
+					<pre style="width:100%;"><code>
+	using (var transactionScope = new TransactionScope())
+	{
+		db.BulkInsert(paymentGuaranteeLineExportData);
+		db.SaveChanges();
+		transactionScope.Complete();
+	}
+					</code></pre>
+				</section>
+				<section>
+				<div>
+					<img src="images/33_BulkInsert.png" style="border: none; background: none" />
+				</div>
+				<div>
+					<img src="images/34_InsertComparisonTo1million.png" style="border: none; background: none" />
+				</div>
+				</section>
+			</section>
+			
+            <section id="closingSection">
+                <h2>THANK YOU!</h2>
+            </section>
+        </div>
+    </div>
+	
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+	
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<script src='js/jquery.zoom.js'></script>
+	
+    <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                //{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+                // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+            ]
+        });
+
+		$(document).ready(function(){
+			$('div.zoom').zoom({on:'grab'});	
+			//$('div.zoom').zoom();	
+			//$('span.zoom').zoom({ on:'click' });	
+		});
+	</script>
+
+</body>
+</html>
