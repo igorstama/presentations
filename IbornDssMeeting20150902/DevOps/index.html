@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>iborn.net</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="iborn.net">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" type="image/x-icon" href="images/LogoTransparent.jpg">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/ibornTheme.css" id="theme">
+    <!--<link rel="stylesheet" href="css/theme/demo.css" id="theme">-->
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+	</script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div class="reveal">
+        <a href="index.html?#/titleSection" class="contentLink" style="font-size: 12px; color: #8d8d8d; padding: 3px;"><img src="images/LogoTransparent.jpg" style="margin-top:20px; margin-left:20px; width: 50px; height: 50px;" /></a>
+        <div id="slideNumber" class="contentLink" style="float: right; color: #8d8d8d; padding: 3px;"></div>
+        <div class="slides">
+            <!--<section id="titleSection" data-background="images/background.jpg" data-background-repeat="repeat" data-background-size="100px">-->
+            <section id="titleSection">
+				<hr />
+				<h3>Operations</h3>
+				<hr />
+				<div>
+					<img src="images/LogoTransparent.jpg" style="margin-top:20px; margin-left:20px; width: 150px; height: 150px; border: none; background: none" />
+				</div>
+                <div>
+                    <div style="text-align: center">
+                        iborn.net
+                    </div>
+                </div>
+
+                <p style="margin-top: 20px; clear: both">
+                    <small>Skopje 2015</small>
+                </p>
+            </section>
+
+            <section id="firstSection">
+                <h3>AGENDA</h2>
+                <ul>
+					<li>Definition and responsibilities</li>
+					<li>Benefits</li>					
+					<li>Issues</li>
+					<li>Solution</li>
+                </ul>
+            </section>
+			
+			<section id="secondSection">
+				<section>
+					<h3>Definition and responsibilities</h2>
+					<ul>
+						<li>Collaboration with the other teams</li>
+						<li>Working environment</li>
+						<li>Well-established workflow</li>
+						<li>Automation of processes</li>
+					</ul>
+					<div>
+						<img src="images/automation.jpg" />
+					</div>
+				</section>
+            </section>
+			
+			<section id="thirdSection">
+				<section>
+					<h3>Issues</h2>
+					<ul>
+						<li>Scenarios</li>					
+					</ul>
+					
+				</section>
+				
+				<section>
+					<h3>1st scenario</h2>
+					<ul>
+						<li>Issue is reported</li>
+						<li>Estimated time: end of the day</li>
+						<li>2 possible outcomes based on the priority 
+						<br/> Normal: Deployed in the next release - <b>PROBLEM</b>
+						<br/> Immediate: Hotfix performed - <b>PROBLEM </b>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>2nd scenario</h2>
+					<ul>
+						<li>Issue is reported (Normal priority)</li>
+						<li>Estimated time: 2-3 days</li>
+						<li>Meanwhile team of developers are developing priority project</li>
+						<li>Both are scheduled for the next release week
+						<br/> <b>PROBLEM</b>: Issue depends on the status of priority project
+						<br/>  
+					</ul>
+				</section>
+				<section>
+					<h3>3rd scenario</h2>
+					<ul>
+						<li>Issue is reported (Immediate priority)</li>
+						<li>Estimated time: 2-3 days</li>
+						<li>Meanwhile couple of minor fixes are also included</li>
+						<li><b>PROBLEM:</b>	The other fixes are not properly accepted, tested or implemented
+						<br/>  
+					</ul>
+				</section>
+				<section>
+					<h3>4th scenario</h2>
+					<ul>
+						<li>Priority project is in progress</li>
+						<li>Scheduled for the next release week</li>
+						<li>Meanwhile, other issues are scheduled to be deployed</li>
+						<li>Project is rejected!</li>
+						<li><b>PROBLEM:</b>	There is no rollback<br/>  
+					</ul>
+				</section>
+            </section>
+
+			<section id="Section">
+                <h3>Continuous integration</h2>
+                <ul>
+					<li>Development practice, issue is immediately delivered</li>
+					<li>Easily deployed to 3 or 4 sites</li>					
+					<li>Projects must be prepared</li>
+					<li>Devote time for this task</li>
+                </ul>
+            </section>
+			
+            <section id="closingSection">
+                <h2>THANK YOU!</h2>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                //{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+                // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+            ]
+        });
+
+		</script>
+
+</body>
+</html>
