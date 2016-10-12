@@ -1,0 +1,632 @@
+﻿<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>iborn.net</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="iborn.net">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="images/LogoTransparent.jpg">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/ibornTheme.css" id="theme">
+    <!--<link rel="stylesheet" href="css/theme/demo.css" id="theme">-->
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+
+    </script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+      <a href="index.html?#/titleSection" class="contentLink" style="font-size: 12px; color: #8d8d8d; padding: 3px;"><img src="images/LogoTransparent.jpg" style="margin-top:20px; margin-left:20px; width: 50px; height: 50px;" /></a>
+      <div id="slideNumber" class="contentLink" style="float: right; color: #8d8d8d; padding: 3px;"></div>
+      <div class="slides">
+        <section id="titleSection">
+          <hr />
+          <h2>BDD &amp;</h2>
+          <h2>Big Data</h2>
+          <hr />
+          <div>
+            <img src="images/LogoTransparent.jpg" style="margin-top:20px; margin-left:20px; width: 150px; height: 150px; border: none; background: none" />
+            <img src="images/career_launch_logo.png" style="margin-top:20px; margin-left:20px; height: 130px; padding: 10px; border: none; background-color: white" />
+          </div>
+          <div>
+            <div style="text-align: center">
+              iborn.net
+            </div>
+          </div>
+
+          <p style="margin-top: 20px; clear: both">
+            <small>Skopje 2016</small>
+          </p>
+        </section>
+
+        <section id="sbeSection">
+
+          <section>
+            <h3> Behavior-driven development</h3>
+            <div>
+              <img src="images/BDD/RolesBDD.png" />
+            </div>
+          </section>
+          <section id="secondSection">
+            <h3>BDD is an "Outside-in" methodology</h3>
+            <div>
+              <img src="images/BDD/UserStory.png" />
+            </div>
+          </section>
+          <section>
+            <h3> User Story </h3>
+            <ul>
+              <li>
+                "I" ndependent (of all others)
+              </li>
+              <li>
+                "N" egotiable (not a specific contract for features)
+              </li>
+              <li>
+                "V" aluable
+              </li>
+              <li>
+                "E" stimatable (to a good approximation)
+              </li>
+              <li>
+                "S" mall (so as to fit within an iteration)
+              </li>
+              <li>
+                "T" estable (in principle, even if there isn't a test for it yet)
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>The structure</h3>
+            <div>
+              <img src="images/BDD/Structure.png" />
+            </div>
+          </section>
+          <section>
+            <h3>The narrative part</h3>
+            <div>
+              <img src="images/BDD/UserStory2.png" />
+            </div>
+          </section>
+          <section>
+            <h3>Acceptance criteria</h3>
+            <div>
+              <img src="images/BDD/bdd-feature.png" />
+            </div>
+          </section>
+          <section>
+            <h3>Given - When - Then </h3>
+            <div>
+              <img src="images/BDD/GivenWhenThen.png" />
+            </div>
+          </section>
+
+          <section>
+            <h3> How we do it at IBorn </h3>
+            <div>
+              <img style="height:600px" src="images/BDD/SBE.png" />
+            </div>
+          </section>
+          <section>
+            <h3> Examples </h3>
+            <ul>
+              <li>
+                <a href="https://docs.google.com/document/d/1CONMMXokYPGb90Kcso5GHnaOTqqcAthdN9QCuI3hgl4/edit" target="_blank"> Epic 1 </a>
+              </li>
+              <li>
+                <a href="https://docs.google.com/document/d/1D_HrJ6T4QXZqFvMlRFYPUSYok4UYvI44gJN-EtCGlMg/edit" target="_blank"> Epic 2 </a>
+              </li>
+              <li>
+                <a href="https://docs.google.com/document/d/1624AthFoI7ahpZej_9tj7UYdZAfEXkRpsQPKFiAG5cY/edit" target="_blank"> Epic 3 </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Redmine</h3>
+            <ul>
+              <li>
+                <a href="https://projects.iborn.net/projects/warning/issues?utf8=%E2%9C%93&set_filter=1&f%5B%5D=status_id&op%5Bstatus_id%5D=o&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=status&c%5B%5D=priority&c%5B%5D=author&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=updated_on&c%5B%5D=fixed_version&c%5B%5D=start_date&c%5B%5D=due_date&c%5B%5D=estimated_hours&c%5B%5D=spent_hours&group_by=tracker"
+                target="_blank">Redmine Link </a>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section id="elkSection">
+          <h3>ELK Stack: Elasticsearch, Logstash, Kibana</h3>
+          <div>
+            <img src="images/elk2.png" style="margin-top:20px; margin-left:20px; border: none; background: none" />
+          </div>
+        </section>
+
+        <section id="elasticSection">
+          <section>
+            <h3>Elasticsearch</h3>
+            <div>
+              <img src="images/elasticsearch.png" style="margin-top:20px; border: none; background: none" />
+            </div>
+            <ul>
+              <li>Built on top of the Lucene search engine</li>
+              <li>Distributed (Nodes, Indexes & Shards)</li>
+              <li>Performance & Scalability</li>
+              <li>Full text indexing & Analytical queries</li>
+              <li>Competition? Solr, Google BigQuery</li>
+            </ul>
+          </section>
+          <section>
+            <table style="font-size: 22px;">
+              <thead>
+                <tr>
+                  <th><strong>Name</strong></th>
+                  <th><strong>Elasticsearch</strong></th>
+                  <th><strong>Google BigQuery</strong></th>
+                  <th><strong>Solr</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Description</td>
+                  <td>A modern search and analytics engine based on Apache Lucene</td>
+                  <td>Large scale data warehouse service with append-only tables</td>
+                  <td>A widely used enterprise search engine based on Apache Lucene</td>
+                </tr>
+                <tr>
+                  <td>Database model</td>
+                  <td>Search engine</td>
+                  <td>Relational DBMS</td>
+                  <td>Search engine</td>
+                </tr>
+                <tr>
+                  <td>Ranking Score (DB Engines)</td>
+                  <td>99.12</td>
+                  <td>6.97</td>
+                  <td>66.57</td>
+                </tr>
+                <tr>
+                  <td>Overall Rank (DB Engines)</td>
+                  <td>#11</td>
+                  <td>#40</td>
+                  <td>#14</td>
+                </tr>
+                <tr>
+                  <td>Category Rank (DB Engines)</td>
+                  <td>#1 (Search Engines)</td>
+                  <td>#24 (Relational DBMS)</td>
+                  <td>#2 (Search Engines)</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <table style="font-size: 22px;">
+              <thead>
+                <tr>
+                  <th><strong>Name</strong></th>
+                  <th><strong>Elasticsearch</strong></th>
+                  <th><strong>Google BigQuery</strong></th>
+                  <th><strong>Solr</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Developer</td>
+                  <td>Elastic</td>
+                  <td>Google</td>
+                  <td>Apache Software Foundation</td>
+                </tr>
+                <tr>
+                  <td>Initial release</td>
+                  <td>2010</td>
+                  <td>2010</td>
+                  <td>2004</td>
+                </tr>
+                <tr>
+                  <td>Current release</td>
+                  <td>2.4.1, September 2016</td>
+                  <td></td>
+                  <td>6.2.1, September 2016</td>
+                </tr>
+                <tr>
+                  <td>License</td>
+                  <td>Open Source</td>
+                  <td>Commercial</td>
+                  <td>Open Source</td>
+                </tr>
+                <tr>
+                  <td>Cloud-based only</td>
+                  <td>no</td>
+                  <td>yes</td>
+                  <td>no</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <table style="font-size: 22px;">
+              <thead>
+                <tr>
+                  <th><strong>Name</strong></th>
+                  <th><strong>Elasticsearch</strong></th>
+                  <th><strong>Google BigQuery</strong></th>
+                  <th><strong>Solr</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Implementation language</td>
+                  <td>Java</td>
+                  <td></td>
+                  <td>Java</td>
+                </tr>
+                <tr>
+                  <td>Server OS</td>
+                  <td>All OS with a Java VM</td>
+                  <td>Hosted</td>
+                  <td>All OS with a Java VM and a servlet container</td>
+                </tr>
+                <tr>
+                  <td>Data scheme</td>
+                  <td>Schema-free</td>
+                  <td>yes</td>
+                  <td>yes</td>
+                </tr>
+                <tr>
+                  <td>Typing</td>
+                  <td>yes</td>
+                  <td>yes</td>
+                  <td>yes</td>
+                </tr>
+                <tr>
+                  <td>XML support</td>
+                  <td>Logstash</td>
+                  <td>no</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Secondary indexes</td>
+                  <td>yes</td>
+                  <td>no</td>
+                  <td>yes</td>
+                </tr>
+                <tr>
+                  <td>SQL</td>
+                  <td>no</td>
+                  <td>no</td>
+                  <td>no</td>
+                </tr>
+                <tr>
+                  <td>APIs and other access methods</td>
+                  <td>Java API
+                    <br>RESTful HTTP/JSON API</td>
+                  <td>RESTful HTTP/JSON API</td>
+                  <td>Java API
+                    <br>RESTful HTTP API</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <table style="font-size: 22px;">
+              <thead>
+                <tr>
+                  <th><strong>Name</strong></th>
+                  <th><strong>Elasticsearch</strong></th>
+                  <th><strong>Google BigQuery</strong></th>
+                  <th><strong>Solr</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Supported programming languages</td>
+                  <td>.Net, Clojure
+                    <br>Erlang, Go, Groovy
+                    <br>Haskell, Java, JavaScript
+                    <br>Lua, Perl, PHP
+                    <br>Python, Ruby, Scala</td>
+                  <td>.Net, Java, JavaScript
+                    <br>Objective-C, PHP
+                    <br>Python, Ruby
+                  </td>
+                  <td>.Net, Erlang, Java
+                    <br>JavaScript
+                    <br>any language that supports sockets and either XML or JSON
+                    <br>Perl, PHP, Python
+                    <br>Ruby, Scala</td>
+                </tr>
+                <tr>
+                  <td>Partitioning methods</td>
+                  <td>Sharding</td>
+                  <td>none</td>
+                  <td>Sharding</td>
+                </tr>
+                <tr>
+                  <td>Replication methods</td>
+                  <td>yes</td>
+                  <td></td>
+                  <td>cloud/distributed (via Zookeeper)
+                    <br>Master-slave replication</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h3>Install & Configure</h3>
+            <ul>
+              <li>Install Java (JDK)</li>
+              <li>Extract Elasticsearch</li>
+              <li>Configure: Cluster Name, Node Name, Network Host...</li>
+              <li>Start up node:</li>
+              <li><pre style="width:100%;"><code>> bin\elasticsearch.bat</code></pre></li>
+              <li>Open in browser</li>
+              <li><pre style="width:100%;"><code>http://localhost:9200/_cluster/health?pretty</code></pre></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Important Concepts</h3>
+            <ul>
+              <li>RESTful HTTP/JSON API</li>
+              <li>Organizational Hierarchy: Index\Type\Document(id)</li>
+              <li>Mapings</li>
+              <li>APIs: Document, Search, Indices...</li>
+              <li>Query DSL: Full text, Matching, Joining, Geo,...</li>
+              <li>
+                | <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html" target="_blank">Docs</a> | <a href="https://www.elastic.co/webinars/get-started-with-elasticsearch?baymax=rtp&elektra=products&iesrc=ctr">Get Started</a>                | </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Architecture</h3>
+            <div>
+              <img src="images/es-cluster.png" style="margin-top:20px; margin-left:20px; border: none; background: none" />
+            </div>
+          </section>
+          <section>
+            <h3>Hardware Recomendations</h3>
+            <div>
+              <img src="images/servers.jpg" style="height: 200px; margin-top:20px; margin-left:20px; border: none; background: none" />
+            </div>
+            <ul>
+              <li>Memory: 64GB</li>
+              <li>CPU: 2 - 8 cores</li>
+              <li>Disks: SSD, RAID 0 (with deadline or noop scheduler)</li>
+              <li>Network: 1 GbE, 10 GbE</li>
+              <li>Prepare to scale and include nodes</li>
+              <li>|<a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/hardware.html">Recomendations</a>|</li>
+            </ul>
+          </section>
+        </section>
+
+        <section id="logstashSection">
+          <section>
+            <h3>Logstash</h3>
+            <div>
+              <img src="images/logstash.png" style="margin-top:20px; border: none; background: none" />
+            </div>
+            <ul>
+              <li>ETL: Extract Transform Load</li>
+              <li>Replaces rivers</li>
+              <li>Can be scheduled</li>
+              <li>Can pull from DB, JSON, logs, XML...</li>
+              <li>Rich, expressional commands</li>
+              <li><pre style="width:100%;"><code>> bin\logstash.bat -f configuration.conf -v</code></pre></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Install & Configure</h3>
+            <ul>
+              <li>Install Java (JDK)</li>
+              <li>Extract Logstash</li>
+              <li>Configure: create a config file (next slide)</li>
+              <li>Start up agent:</li>
+              <li><pre style="width:100%;"><code>> bin\logstash.bat -f configuration.conf -v</code></pre></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Configuration skeleton</h3>
+            <pre style="width:110%">
+		  <code>
+			input {
+				file {
+				}
+			}
+			filter {
+				xml {
+				}
+				mutate {
+				}
+			}
+			output {
+			}
+		  </code>
+		  </pre>
+          </section>
+          <section>
+            <h3>Input file configuration</h3>
+            <pre style="width:110%">
+		  <code>
+				file 
+				{
+					path => "_path_to_xml_file_"
+					start_position => "beginning"
+					sincedb_path =>"_path_to_since_db_txt_file_"
+					codec => multiline {
+						charset => "_charset_name_(UTF-8|UTF-16|...)"
+						max_bytes => "_limit_in_mega_bytes_ MiB"
+						max_lines => 50000
+						pattern => "_regex_pattern_" 
+						negate => "true"
+						what => "previous"
+					}
+				}
+		  </code>
+		  </pre>
+          </section>
+          <section>
+            <h3>Input jdbc configuration</h3>
+            <pre style="width:110%">
+		  <code>
+			  jdbc {
+				jdbc_driver_library => "C:\Program Files (x86)\Microsoft JDBC Driver 4.2 for SQL Server\sqljdbc_4.2\enu\sqljdbc42.jar"
+				jdbc_driver_class => "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+				jdbc_connection_string => "jdbc:sqlserver://_server_ip_;user=_user_;password=_password_;"
+				jdbc_user => "_user_"
+				jdbc_password => "_password_"
+				statement => "SELECT [Id] AS id,[Text] AS text FROM [_db_name_].[dbo].[_table_name_]"
+			  }
+		  </code>
+		  </pre>
+          </section>
+          <section>
+            <h3>xml & mutate filters</h3>
+            <pre style="width:110%">
+		  <code>
+				xml {
+					source => "message"
+					target => "target_type"
+					xpath => [
+						"/ElementName/@id","id",
+						"/ElementName/SubElementName/text()","text",
+					]
+				}
+				mutate {
+					join => [ "id", ""]
+					update => { "message" => "%{id}"}
+					join => [ "text", ""]
+					update => { "message" => "%{text}" }
+				}
+		  </code>
+		  </pre>
+          </section>
+          <section>
+            <h3>output</h3>
+            <pre style="width:110%">
+			  <code>
+				output {
+					stdout { 
+						codec => "rubydebug" 
+					}
+					elasticsearch {
+						hosts => "_host_address_"
+						index => "_index_name_"
+						document_type => "_document_type_"
+						document_id => "%{[id]}"
+					}
+				}
+			  </code>
+		  </pre>
+          </section>
+        </section>
+
+        <section id="kibanaSection">
+          <section>
+            <h3>Kibana</h3>
+            <div>
+              <img src="images/kibana.png" style="margin-top:20px; border: none; background: none" />
+            </div>
+            <ul>
+              <li>Data Visualization Platform</li>
+              <li>Data Analysis</li>
+              <li>Connects with Elasticsearch</li>
+              <li>On-demand and Scheduled PDF Reports, Exports</li>
+              <li>Bar Charts, Line and Scatter Plots, Histograms, Pie charts, Maps...</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Install & Configure</h3>
+            <ul>
+              <li>Install Java (JDK)</li>
+              <li>Extract Kibana</li>
+              <li>Configure: set elasticsearch.url</li>
+              <li>Start up Kibana:</li>
+              <li><pre style="width:100%;"><code>> bin\kibana.bat</code></pre></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Open http://localhost:5601/</h3>
+            <div>
+              <img src="images/kibana_dashboard.png" style="margin-top:20px; border: none; background: none" />
+            </div>
+          </section>
+        </section>
+
+        <section id="closingSection">
+          <h2>THANK YOU!</h2>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+              return !document.body.classList;
+            }
+          }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          //{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true,
+            condition: function() {
+              return !!document.body.classList;
+            }
+          }, {
+            src: 'plugin/notes/notes.js',
+            async: true,
+            condition: function() {
+              return !!document.body.classList;
+            }
+          }
+          // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+
+</html>
