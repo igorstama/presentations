@@ -1591,7 +1591,7 @@ var Reveal = (function(){
 			}
 
 			dom.progressbar.style.width = ( pastCount / ( totalCount - 1 ) ) * window.innerWidth + 'px';
-			document.getElementById("slideNumber").innerHTML = pastCount + " / " + ( totalCount - 1 )
+			document.getElementById("slideNumber").innerHTML = pastCount + " / " + ( totalCount - 1 );
 		}
 
 	}
